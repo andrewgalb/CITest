@@ -8,6 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5C4336C-4B19-4394-8170-D9F2F5FF8F2E}"
 	ProjectSection(SolutionItems) = preProject
 		build.sh = build.sh
+		run-tests.sh = run-tests.sh
+		after-success.sh = after-success.sh
 	EndProjectSection
 EndProject
 Global

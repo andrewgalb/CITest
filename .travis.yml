@@ -1,7 +1,14 @@
-﻿language: csharp
+language: csharp
 dist: trusty
 sudo: required
 mono: none
 dotnet: 1.0.1
+before_script:
+  - chmod a+x ./build.sh
+  - chmod a+x ./run-tests.sh
+  - chmod a+x ./after-success.sh
 script:
-  - ./build.sh --quiet verify
+  - ./build.sh
+  - ./run-tests.sh
+after_success:
+  - ./after-success.sh
