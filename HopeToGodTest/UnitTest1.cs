@@ -14,5 +14,14 @@ namespace HopeToGodTest
             Assert.Equal(expected, actual);
 
         }
+
+		[Fact]
+		public void Test_Multiply2()
+		{
+			var expected = 6;
+			var actual = Program.Multiply(7, 2);
+			Assert.Equal(expected, actual);
+
+		}
     }
 }
